@@ -18,3 +18,4 @@ You can find below hint on the HTML and CSS validation of your project. **It doe
 - Current status the main branch : ![HTML VALIDATIOn](../../actions/workflows/validateHTML.yml/badge.svg?branch=main)
 
 You can also [check the accessibility of your website](https://devweb.estia.fr/accessibility/) 
+
