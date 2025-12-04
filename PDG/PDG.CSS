@@ -14,7 +14,7 @@ body {
 .header {
     background-color: #0077cc; /* Bleu vif pour l'en-tête */
     color: white;
-    padding: 15px 40px;
+    padding: 10px 40px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -121,4 +121,71 @@ margin-bottom: 5px;
     text-align: center;
     padding: 15px 0;
     font-size: 0.9em;
+}
+@media (max-width: 768px) {
+    /* Mise en page de l'en-tête (Header) */
+    .header {
+        flex-direction: column; /* Passe de côte à côte à empilé */
+        padding: 10px 20px;
+    }
+
+    .logo img {
+        width: 150px; /* Réduit la taille du logo sur les petits écrans */
+        max-width: 100%;
+        height: auto;
+    }
+
+    .top-nav {
+        margin-top: 15px;
+        display: flex;
+        flex-wrap: wrap; /* Permet aux liens de passer à la ligne si nécessaire */
+        justify-content: center;
+    }
+
+    .top-nav a {
+        margin: 5px 8px; /* Ajoute un petit espace autour des liens */
+        padding: 6px 12px;
+    }
+}
+@media (max-width: 600px) {
+
+    /* Conteneur des boutons centraux */
+    .center-buttons {
+        flex-direction: column; /* Changement CLÉ : empilement vertical */
+        gap: 15px; /* Réduit l'espace entre les boutons */
+        width: 100%; /* Prend toute la largeur disponible */
+        padding: 0 15px;
+    }
+
+    /* Style des trois boutons centraux */
+    .btn-primary {
+        width: 100%; /* Le bouton prend toute la largeur du conteneur */
+        max-width: 350px; /* Limite la largeur maximale pour ne pas être trop étiré */
+        margin: 0 auto; /* Centre le bouton */
+        
+        /* Optionnel : Met l'icône et le texte côte à côte pour un bouton plus classique sur mobile */
+        flex-direction: row; 
+        justify-content: flex-start; /* Aligne l'icône et le texte à gauche */
+        padding: 15px 25px;
+        font-size: 1.1em;
+    }
+    
+    .btn-primary .icon {
+        font-size: 1.8em; /* Réduit la taille de l'icône */
+        margin-bottom: 0; /* Annule la marge inférieure de la version bureau */
+        margin-right: 15px; /* Ajoute une marge à droite de l'icône */
+    }
+
+    /* Contenu principal (mise en page générale) */
+    .main-content {
+        padding: 30px 15px;
+    }
+
+    .main-content h1 {
+        font-size: 1.5em; /* Réduit la taille du titre */
+    }
+
+    .main-content p {
+        font-size: 1em; /* Réduit la taille du paragraphe */
+    }
 }
