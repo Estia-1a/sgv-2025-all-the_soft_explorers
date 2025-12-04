@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Compte - Soft Explorer</title>
+    <link rel="stylesheet" href="styles/desktop.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <a href="index.html" class="brand-container">
+            <img src="../media/pictures/logo.png" alt="Logo Soft Explorer" class="logo-img" onerror="this.style.display='none'">
+            <span class="brand-text">Soft <span class="highlight">Explorer</span></span>
+        </a>
+
+        <ul class="nav-links">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="P_cours.html">Mes Cours</a></li>
+            <li><a href="P_cours_interactif.html">Cours Interactifs</a></li>
+            <li><a href="P_discussion.html">Discussion</a></li>
+        </ul>
+
+        <div class="nav-actions">
+            <a href="#" class="btn-premium" title="Devenir Premium">
+                <i class="fa-solid fa-crown"></i>
+            </a>
+            <a href="P_compte.html" class="btn-login active-account">
+                <i class="fa-solid fa-user"></i> Thomas
+            </a>
+        </div>
+        <div class="menu-toggle"><i class="fa-solid fa-bars"></i></div>
+    </nav>
+
+    <main class="courses-container">
+        
+        <header class="page-header">
+            <h1>Mon Profil Étudiant</h1>
+            <p>Gérez vos informations personnelles et votre abonnement.</p>
+        </header>
+
+        <div class="account-grid">
+
+            <aside class="profile-card">
+                <div class="profile-header">
+                    <div class="avatar-container">
+                        <img src="https://ui-avatars.com/api/?name=Thomas+P&background=003366&color=fff&size=128" alt="Avatar Thomas">
+                        <button class="btn-edit-avatar"><i class="fa-solid fa-camera"></i></button>
+                    </div>
+                    <h2>Thomas</h2>
+                    <p class="student-role">Étudiant 1ère Année</p>
+                    <p class="school-name">ESTIA</p>
+                </div>
+                
+                <div class="profile-stats">
+                    <div class="p-stat">
+                        <span class="num">3</span>
+                        <span class="label">Cours en cours</span>
+                    </div>
+                    <div class="p-stat">
+                        <span class="num">12</span>
+                        <span class="label">Heures apprises</span>
+                    </div>
+                </div>
+
+                <button class="btn-logout">
+                    <i class="fa-solid fa-right-from-bracket"></i> Déconnexion
+                </button>
+            </aside>
+
+            <section class="details-section">
+                
+                <div class="info-card subscription-box">
+                    <div class="sub-header">
+                        <h3><i class="fa-solid fa-crown"></i> Mon Abonnement</h3>
+                        <span class="status-badge standard">Standard (Gratuit)</span>
+                    </div>
+                    <p>Passez à la vitesse supérieure pour accéder à tous les exercices corrigés et aux vidéos HD.</p>
+                    <button class="btn-upgrade">Passer Premium - 9.99€/mois</button>
+                </div>
+
+                <div class="info-card">
+                    <h3>Informations Personnelles</h3>
+                    <form class="account-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>Prénom</label>
+                                <input type="text" value="Thomas" readonly>
+                            </div>
+                            <div class="form-group">
+                                <label>Nom</label>
+                                <input type="text" value="Puiroux" readonly> </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Email de l'école</label>
+                            <input type="email" value="thomas.p@net.estia.fr" readonly>
+                        </div>
+                        <div class="form-group">
+                            <label>Mot de passe</label>
+                            <input type="password" value="********">
+                            <a href="#" class="link-small">Modifier</a>
+                        </div>
+                        
+                        <div class="form-actions">
+                            <button type="button" class="btn-save">Enregistrer les modifications</button>
+                        </div>
+                    </form>
+                </div>
+
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2025 Soft Explorer. Tous droits réservés.</p>
+    </footer>
+
+</body>
+</html>
