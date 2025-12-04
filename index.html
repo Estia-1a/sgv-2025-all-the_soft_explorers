@@ -3,12 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="stylesheet" href="styles/desktop.css" media="screen and (min-width: 768px)"> 
-    <link rel="stylesheet" href="styles/mobile.css" media="screen and (max-width: 767px)"> 
-    <title>MOODLE ALTERNATIF</title>
+    <title>Accueil - Soft Explorer</title>
+    <link rel="stylesheet" href="education.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <h1> debut du site</h1>
+
+    <nav class="navbar">
+        <a href="P_accueil.html" class="brand-container">
+            <img src="../media/pictures/logo.png" alt="Logo Soft Explorer" class="logo-img" onerror="this.style.display='none'"> 
+            <span class="brand-text">Soft Explorer <span class="highlight">Explorer</span></span>
+        </a>
+
+        <ul class="nav-links">
+            <li><a href="P_accueil.html" class="active">Accueil</a></li>
+            <li><a href="P_cours.html">Mes Cours</a></li>
+            <li><a href="P_cours_interactif.html">Cours Interactifs</a></li>
+            <li><a href="P_discussion.html">Discussion</a></li>
+        </ul>
+
+        <div class="nav-actions">
+            <a href="#" class="btn-premium" title="Devenir Premium">
+                <i class="fa-solid fa-crown"></i>
+            </a>
+            <a href="#" class="btn-login">
+                <i class="fa-solid fa-user"></i> Mon Compte
+            </a>
+        </div>
+        <div class="menu-toggle"><i class="fa-solid fa-bars"></i></div>
+    </nav>
+ 
+    <main class="main-content hero-section">
+        <div class="hero-text">
+            <h1>Bienvenue sur Soft Explorer</h1>
+            <p>Votre plateforme d'apprentissage ingénieur. Gérez votre scolarité, validez vos modules et échangez avec vos pairs.</p>
+        </div>
+ 
+        <div class="home-actions-grid">
+            <a href="P_cours.html" class="action-card">
+                <div class="icon-circle"><i class="fa-solid fa-book-open"></i></div>
+                <h3>Mes Cours</h3>
+                <p>Suivi de progression et modules</p>
+            </a>
+            
+            <a href="P_cours_interactif.html" class="action-card">
+                <div class="icon-circle"><i class="fa-solid fa-lightbulb"></i></div>
+                <h3>Cours Interactifs</h3>
+                <p>Quiz, exercices et pratique</p>
+            </a>
+            
+            <a href="P_discussion.html" class="action-card">
+                <div class="icon-circle"><i class="fa-solid fa-comments"></i></div>
+                <h3>Discussion</h3>
+                <p>Entraide étudiants et profs</p>
+            </a>
+        </div>
+    </main>
+ 
+    <footer class="footer">
+        <p>&copy; 2025 Soft Explorer. Tous droits réservés.</p>
+    </footer>
+
 </body>
 </html>
