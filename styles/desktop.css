@@ -466,7 +466,7 @@ body {
 
 .btn-new-topic:hover {
     background-color: #e65c00;
-    transform: translateY(-2px);
+    transform: translateY(-4px);
 }
 
 /* Liste des cartes forum */
